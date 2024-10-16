@@ -1,0 +1,149 @@
+# JMH version: 1.35
+# VM version: JDK 11.0.21, Eclipse OpenJ9 VM, v0.41.0-release-87d042a68
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: C:\Users\alvar\.jdks\semeru-11.0.21\bin\java.exe
+# VM options: -Xoptionsfile=C:\Users\alvar\.jdks\semeru-11.0.21\lib\options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -XX:+EnsureHashed:java/lang/Class,java/lang/Thread -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin -Dsun.boot.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin -Djava.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2022b\bin;C:\Program Files\AutoFirma\AutoFirma;C:\Program Files\Git\cmd;C:\Users\alvar\Desktop\Universidad\02 - AÑO2\03 - DACD\PRACTICAS\Practice2\stuff\apache-maven-3.9.5\bin;C:\Archivos de programa\Java\jdk-21\bin;C:\Users\alvar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Users\alvar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\alvar\AppData\Local\Programs\Python\Python311\;C:\Users\alvar\AppData\Local\Microsoft\WindowsApps;;C:\Users\alvar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\alvar\AppData\Local\JetBrains\CLion 2024.2.2\bin;;. -Djava.home=C:\Users\alvar\.jdks\semeru-11.0.21 -Duser.dir=C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1 -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=53792:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8 -Djava.class.path=C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1\target\test-classes;C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1\target\classes;C:\Users\alvar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar;C:\Users\alvar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\alvar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\alvar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar -Dsun.java.command=org.openjdk.jmh.Main org.example.MatrixMultiplicationBenchmarking.multiplication$ -Dsun.java.launcher=SUN_STANDARD
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.MatrixMultiplicationBenchmarking.multiplication
+# Parameters: (size = 10)
+
+# Run progress: 0,00% complete, ETA 00:00:00
+# Fork: 1 of 1
+WARNING: Not a HotSpot compiler command compatible VM ("Eclipse OpenJ9 VM-11.0.21"), compilerHints are disabled.
+# Warmup Iteration   1: 5,391 ms/op
+# Warmup Iteration   2: 4,260 ms/op
+# Warmup Iteration   3: 2,592 ms/op
+# Warmup Iteration   4: 1,964 ms/op
+# Warmup Iteration   5: 2,176 ms/op
+Iteration   1: 5,022 ms/op
+Iteration   2: 2,626 ms/op
+Iteration   3: 2,071 ms/op
+Iteration   4: 1,934 ms/op
+Iteration   5: 1,904 ms/op
+Iteration   6: 2,299 ms/op
+Iteration   7: 1,954 ms/op
+Iteration   8: 2,036 ms/op
+Iteration   9: 4,006 ms/op
+Iteration  10: _
+Average Memory used: 9638.831460674157 bytes
+_
+CPU percentage used: 0.0 %
+_
+3,434 ms/op
+
+
+Result "org.example.MatrixMultiplicationBenchmarking.multiplication":
+  2,729 ±(99.9%) 1,626 ms/op [Average]
+  (min, avg, max) = (1,904, 2,729, 5,022), stdev = 1,075
+  CI (99.9%): [1,103, 4,354] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 11.0.21, Eclipse OpenJ9 VM, v0.41.0-release-87d042a68
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: C:\Users\alvar\.jdks\semeru-11.0.21\bin\java.exe
+# VM options: -Xoptionsfile=C:\Users\alvar\.jdks\semeru-11.0.21\lib\options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -XX:+EnsureHashed:java/lang/Class,java/lang/Thread -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin -Dsun.boot.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin -Djava.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2022b\bin;C:\Program Files\AutoFirma\AutoFirma;C:\Program Files\Git\cmd;C:\Users\alvar\Desktop\Universidad\02 - AÑO2\03 - DACD\PRACTICAS\Practice2\stuff\apache-maven-3.9.5\bin;C:\Archivos de programa\Java\jdk-21\bin;C:\Users\alvar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Users\alvar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\alvar\AppData\Local\Programs\Python\Python311\;C:\Users\alvar\AppData\Local\Microsoft\WindowsApps;;C:\Users\alvar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\alvar\AppData\Local\JetBrains\CLion 2024.2.2\bin;;. -Djava.home=C:\Users\alvar\.jdks\semeru-11.0.21 -Duser.dir=C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1 -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=53792:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8 -Djava.class.path=C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1\target\test-classes;C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1\target\classes;C:\Users\alvar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar;C:\Users\alvar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\alvar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\alvar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar -Dsun.java.command=org.openjdk.jmh.Main org.example.MatrixMultiplicationBenchmarking.multiplication$ -Dsun.java.launcher=SUN_STANDARD
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.MatrixMultiplicationBenchmarking.multiplication
+# Parameters: (size = 100)
+
+# Run progress: 33,33% complete, ETA 00:00:02
+# Fork: 1 of 1
+WARNING: Not a HotSpot compiler command compatible VM ("Eclipse OpenJ9 VM-11.0.21"), compilerHints are disabled.
+# Warmup Iteration   1: 37,865 ms/op
+# Warmup Iteration   2: 37,268 ms/op
+# Warmup Iteration   3: 13,933 ms/op
+# Warmup Iteration   4: 10,061 ms/op
+# Warmup Iteration   5: 6,468 ms/op
+Iteration   1: 5,743 ms/op
+Iteration   2: 5,703 ms/op
+Iteration   3: 5,674 ms/op
+Iteration   4: 6,906 ms/op
+Iteration   5: 9,254 ms/op
+Iteration   6: 9,299 ms/op
+Iteration   7: 7,580 ms/op
+Iteration   8: 7,328 ms/op
+Iteration   9: 13,875 ms/op
+Iteration  10: _
+Average Memory used: 111479.42857142857 bytes
+_
+CPU percentage used: 3.6785714285714284 %
+_
+11,372 ms/op
+
+
+Result "org.example.MatrixMultiplicationBenchmarking.multiplication":
+  8,273 ±(99.9%) 4,094 ms/op [Average]
+  (min, avg, max) = (5,674, 8,273, 13,875), stdev = 2,708
+  CI (99.9%): [4,179, 12,368] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 11.0.21, Eclipse OpenJ9 VM, v0.41.0-release-87d042a68
+# *** WARNING: This VM is not supported by JMH. The produced benchmark data can be completely wrong.
+# VM invoker: C:\Users\alvar\.jdks\semeru-11.0.21\bin\java.exe
+# VM options: -Xoptionsfile=C:\Users\alvar\.jdks\semeru-11.0.21\lib\options.default -Xlockword:mode=default,noLockword=java/lang/String,noLockword=java/util/MapEntry,noLockword=java/util/HashMap$Entry,noLockword=org/apache/harmony/luni/util/ModifiedMap$Entry,noLockword=java/util/Hashtable$Entry,noLockword=java/lang/invoke/MethodType,noLockword=java/lang/invoke/MethodHandle,noLockword=java/lang/invoke/CollectHandle,noLockword=java/lang/invoke/ConstructorHandle,noLockword=java/lang/invoke/ConvertHandle,noLockword=java/lang/invoke/ArgumentConversionHandle,noLockword=java/lang/invoke/AsTypeHandle,noLockword=java/lang/invoke/ExplicitCastHandle,noLockword=java/lang/invoke/FilterReturnHandle,noLockword=java/lang/invoke/DirectHandle,noLockword=java/lang/invoke/ReceiverBoundHandle,noLockword=java/lang/invoke/DynamicInvokerHandle,noLockword=java/lang/invoke/FieldHandle,noLockword=java/lang/invoke/FieldGetterHandle,noLockword=java/lang/invoke/FieldSetterHandle,noLockword=java/lang/invoke/StaticFieldGetterHandle,noLockword=java/lang/invoke/StaticFieldSetterHandle,noLockword=java/lang/invoke/IndirectHandle,noLockword=java/lang/invoke/InterfaceHandle,noLockword=java/lang/invoke/VirtualHandle,noLockword=java/lang/invoke/PrimitiveHandle,noLockword=java/lang/invoke/InvokeExactHandle,noLockword=java/lang/invoke/InvokeGenericHandle,noLockword=java/lang/invoke/VarargsCollectorHandle,noLockword=java/lang/invoke/ThunkTuple -XX:+EnsureHashed:java/lang/Class,java/lang/Thread -Xjcl:jclse29 -Dcom.ibm.oti.vm.bootstrap.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin -Dsun.boot.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin -Djava.library.path=C:\Users\alvar\.jdks\semeru-11.0.21\bin\default;C:\Users\alvar\.jdks\semeru-11.0.21\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2022b\bin;C:\Program Files\AutoFirma\AutoFirma;C:\Program Files\Git\cmd;C:\Users\alvar\Desktop\Universidad\02 - AÑO2\03 - DACD\PRACTICAS\Practice2\stuff\apache-maven-3.9.5\bin;C:\Archivos de programa\Java\jdk-21\bin;C:\Users\alvar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\Scripts;C:\Users\alvar\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\alvar\AppData\Local\Programs\Python\Python311\;C:\Users\alvar\AppData\Local\Microsoft\WindowsApps;;C:\Users\alvar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\alvar\AppData\Local\JetBrains\CLion 2024.2.2\bin;;. -Djava.home=C:\Users\alvar\.jdks\semeru-11.0.21 -Duser.dir=C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1 -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\lib\idea_rt.jar=53792:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin -Dfile.encoding=UTF-8 -Djava.class.path=C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1\target\test-classes;C:\Users\alvar\Desktop\Universidad\03 - AÑO3\Semestre-1\04-BD\01-Teoria\Individual Assignment\java\stage1\target\classes;C:\Users\alvar\.m2\repository\org\openjdk\jmh\jmh-core\1.35\jmh-core-1.35.jar;C:\Users\alvar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\alvar\.m2\repository\org\apache\commons\commons-math3\3.2\commons-math3-3.2.jar;C:\Users\alvar\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.35\jmh-generator-annprocess-1.35.jar -Dsun.java.command=org.openjdk.jmh.Main org.example.MatrixMultiplicationBenchmarking.multiplication$ -Dsun.java.launcher=SUN_STANDARD
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 ms each
+# Measurement: 10 iterations, 1 ms each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.MatrixMultiplicationBenchmarking.multiplication
+# Parameters: (size = 1000)
+
+# Run progress: 66,67% complete, ETA 00:00:01
+# Fork: 1 of 1
+WARNING: Not a HotSpot compiler command compatible VM ("Eclipse OpenJ9 VM-11.0.21"), compilerHints are disabled.
+# Warmup Iteration   1: 2629,032 ms/op
+# Warmup Iteration   2: 7341,711 ms/op
+# Warmup Iteration   3: 3372,947 ms/op
+# Warmup Iteration   4: 2493,980 ms/op
+# Warmup Iteration   5: 5041,621 ms/op
+Iteration   1: 2574,453 ms/op
+Iteration   2: 2570,326 ms/op
+Iteration   3: 2555,087 ms/op
+Iteration   4: 2700,639 ms/op
+Iteration   5: 2596,472 ms/op
+Iteration   6: 2624,240 ms/op
+Iteration   7: 2553,739 ms/op
+Iteration   8: 2631,411 ms/op
+Iteration   9: 2473,586 ms/op
+Iteration  10: _
+Average Memory used: 7944847.466666667 bytes
+_
+CPU percentage used: 7.6 %
+_
+2389,962 ms/op
+
+
+Result "org.example.MatrixMultiplicationBenchmarking.multiplication":
+  2566,992 ±(99.9%) 130,061 ms/op [Average]
+  (min, avg, max) = (2389,962, 2566,992, 2700,639), stdev = 86,027
+  CI (99.9%): [2436,931, 2697,052] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:49
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                        (size)  Mode  Cnt     Score     Error  Units
+MatrixMultiplicationBenchmarking.multiplication      10  avgt   10     2,729 ±   1,626  ms/op
+MatrixMultiplicationBenchmarking.multiplication     100  avgt   10     8,273 ±   4,094  ms/op
+MatrixMultiplicationBenchmarking.multiplication    1000  avgt   10  2566,992 ± 130,061  ms/op
+
+Process finished with exit code 0
