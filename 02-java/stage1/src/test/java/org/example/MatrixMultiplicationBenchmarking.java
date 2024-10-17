@@ -67,33 +67,28 @@ public class MatrixMultiplicationBenchmarking {
 
 	@Benchmark
 	public void multiplication(Operands operands){
-		// Medir memoria
+
 		Runtime runtime = Runtime.getRuntime();
-		runtime.gc(); // Liberar memoria antes de medir
+		runtime.gc();
 		long beforeMemory = getMemory(runtime);
 
-		// Obtener el bean para medir el uso de CPU
 		OperatingSystemMXBean osBean = (OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean();
 		double beforeCpuLoad = getCpuLoad(osBean);
 
-		// Ejecutar la multiplicación
 		new MatrixMultiplication().execute(operands.a, operands.b);
 
-		// Medir el uso de CPU después de la ejecución
 		double afterCpuLoad = getCpuLoad(osBean);
 		double usedCpu = afterCpuLoad - beforeCpuLoad;
 
-		// Medir memoria después
 		long afterMemory = getMemory(runtime);
 		long usedMemory = afterMemory - beforeMemory;
 
-		// Guardar los valores de memoria y CPU para calcular el promedio después
 		operands.memoryUsages.add(usedMemory);
 		operands.cpuPercentages.add((long) usedCpu);
 	}
 
 	private static double getCpuLoad(OperatingSystemMXBean osBean) {
-		double cpuLoad = osBean.getProcessCpuLoad() * 100;  // Porcentaje de CPU usado antes de ejecutar
+		double cpuLoad = osBean.getProcessCpuLoad() * 100;
 		return cpuLoad;
 	}
 
